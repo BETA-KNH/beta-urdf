@@ -1,0 +1,119 @@
+logging:
+  mode: default
+  console_level: INFO
+  file_level: DEBUG
+  file_path: quadruped.log
+  clear_existing_handlers: true
+  delay_file_creation: false
+client:
+  env: key.env
+  base_url: https://cad.onshape.com
+document:
+  url: https://cad.onshape.com/documents/4e1da054bd6bab42d7e2992d/w/8d22cbc1fd08160802a236e9/e/39b03eb076f8268e112e3e99
+  base_url: https://cad.onshape.com
+  did: 4e1da054bd6bab42d7e2992d
+  wtype: w
+  wid: 8d22cbc1fd08160802a236e9
+  eid: 39b03eb076f8268e112e3e99
+  name: BETA
+assembly:
+  element_id: 39b03eb076f8268e112e3e99
+  configuration: default
+  log_response: true
+  with_meta_data: true
+cad:
+  max_depth: 0
+kinematics:
+  use_user_defined_root: true
+robot:
+  name: nogi_beta
+  type: urdf
+  fetch_mass_properties: true
+export:
+  file_path: nogi_urdf/nogi_beta.urdf
+  download_assets: true
+  mesh_dir: nogi_urdf/meshes
+names:
+  parts:
+    hip_base_link_1:
+      original: hip_base_link <1>
+      name: hip_base_link_1
+    base_link_1:
+      original: base_link <1>
+      name: base_link_1
+    hip_left_yaw_link_1:
+      original: hip_left_yaw_link <1>
+      name: hip_left_yaw_link_1
+    hip_right_yaw_link_1:
+      original: hip_right_yaw_link <1>
+      name: hip_right_yaw_link_1
+    hip_left_roll_link_1:
+      original: hip_left_roll_link <1>
+      name: hip_left_roll_link_1
+    hip_right_roll_link_1:
+      original: hip_right_roll_link <1>
+      name: hip_right_roll_link_1
+    hip_left_pitch_link_1:
+      original: hip_left_pitch_link <1>
+      name: hip_left_pitch_link_1
+    hip_right_pitch_link_1:
+      original: hip_right_pitch_link <1>
+      name: hip_right_pitch_link_1
+    knee_left_link_1:
+      original: knee_left_link <1>
+      name: knee_left_link_1
+    knee_right_link_1:
+      original: knee_right_link <1>
+      name: knee_right_link_1
+    ankle_left_pitch_link_1:
+      original: ankle_left_pitch_link <1>
+      name: ankle_left_pitch_link_1
+    ankle_right_pitch_link_1:
+      original: ankle_right_pitch_link <1>
+      name: ankle_right_pitch_link_1
+    ankle_left_roll_link_1:
+      original: ankle_left_roll_link <1>
+      name: ankle_left_roll_link_1
+    ankle_right_roll_link_1:
+      original: ankle_right_roll_link <1>
+      name: ankle_right_roll_link_1
+  mates:
+    hip_yaw_joint:
+      original: hip_yaw_joint
+      name: hip_yaw_joint
+    hip_left_yaw_joint:
+      original: hip_left_yaw_joint
+      name: hip_left_yaw_joint
+    hip_right_yaw_joint:
+      original: hip_right_yaw_joint
+      name: hip_right_yaw_joint
+    hip_right_roll_joint:
+      original: hip_right_roll_joint
+      name: hip_right_roll_joint
+    hip_left_roll_joint:
+      original: hip_left_roll_joint
+      name: hip_left_roll_joint
+    hip_left_pitch_joint:
+      original: hip_left_pitch_joint
+      name: hip_left_pitch_joint
+    hip_right_pitch_joint:
+      original: hip_right_pitch_joint
+      name: hip_right_pitch_joint
+    knee_left_pitch_join:
+      original: knee_left_pitch_join
+      name: knee_left_pitch_join
+    knee_right_pitch_joint:
+      original: knee_right_pitch_joint
+      name: knee_right_pitch_joint
+    ankle_right_pitch_joint:
+      original: ankle_right_pitch_joint
+      name: ankle_right_pitch_joint
+    ankle_left_pitch_joint:
+      original: ankle_left_pitch_joint
+      name: ankle_left_pitch_joint
+    ankle_left_roll_joint:
+      original: ankle_left_roll_joint
+      name: ankle_left_roll_joint
+    ankle_right_roll_joint:
+      original: ankle_right_roll_joint
+      name: ankle_right_roll_joint
